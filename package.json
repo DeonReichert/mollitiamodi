@@ -1,0 +1,27 @@
+{
+  "name": "mollitiamodi",
+  "description": "A Javascript/Typescript wrapper for the Terraform CLI",
+  "version": "1.0.0",
+  "author": "TryciaMayer",
+  "keywords": [
+    "et",
+    "quos",
+    "ts"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DeonReichert/mollitiamodi.git"
+  },
+  "scripts": {
+    "build": "rimraf dist docs/api && tsc && typedoc --theme default --target ES6 --out docs/api src/",
+    "watch": "rimraf dist && tsc -w"
+  },
+  "devDependencies": {
+    "rimraf": "^2.6.2",
+    "tslint": "^5.8.0",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.6.1"
+  }
+}
